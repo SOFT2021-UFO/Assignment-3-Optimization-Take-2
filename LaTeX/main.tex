@@ -1,0 +1,58 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   CPHBUSINESS THESIS TEMPLATE
+% 
+%   Originally by Thomas S. N. Ebsen (cph-te52@cphbusiness.dk)
+%   This version Copyright (c) 2021 Thomas S. N. Ebsen
+%
+%   Board permissions are granted to use, modify, and distribute this software
+%   as specified in the MIT License included in this distribution's LICENSE file.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, width=150mm, top=25mm, bottom=25mm]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,LE]{Assignment 3 - Optimization}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\usepackage[sorting=none]{biblatex}
+\addbibresource{pages/references.bib}
+
+\usepackage[autostyle]{csquotes} 
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage[colorinlistoftodos]{todonotes}
+
+
+\begin{document}
+
+\input{pages/titlepage}
+
+\tableofcontents
+
+\chapter{Introduction}
+\input{pages/chapters/introduction}
+\chapter{Documentation}
+\input{pages/chapters/documentation.tex}
+\pagebreak
+\input{pages/chapters/bottlenecks.tex}
+\pagebreak
+\input{pages/chapters/optimization.tex}
+\chapter{Conclusion}
+\input{pages/chapters/conclusion.tex}
+
+
+\printbibliography
+
+\end{document}
